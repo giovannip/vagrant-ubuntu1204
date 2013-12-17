@@ -4,7 +4,7 @@
 add-apt-repository -y ppa:ondrej/php5-oldstable
 apt-get update
 
-apt-get install -y php5 php5-mysql php5-sqlite
+apt-get install -y php5 php5-mysql php5-sqlite php5-curl php5-gd php5-xmlrpc php5-intl
 
 debconf-set-selections <<< 'mysql-server mysql-server/root_password password 12345'
 debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password 12345'
